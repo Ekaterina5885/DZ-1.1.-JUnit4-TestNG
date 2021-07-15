@@ -8,15 +8,6 @@ public class CashbackHackServiceTest {
     CashbackHackService service = new CashbackHackService();
 
     @Test
-    public void shouldReturn1000IfAmountZero() {
-
-        int actual = service.remain(0);
-        int expected = 1000;
-
-        assertEquals(actual, expected);
-    }
-
-    @Test
     public void shouldReturn300IfAmount700() {
 
         int actual = service.remain(700);
